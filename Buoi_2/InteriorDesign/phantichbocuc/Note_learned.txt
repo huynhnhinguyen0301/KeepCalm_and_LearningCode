@@ -1,0 +1,22 @@
+- Ghi chú đại diện cho các phần chính đó.
+- ".tenclass" sẽ xuất hiện :
+<div class="carousel"></div>
+(chỉ áp dụng cho thẻ div)
+
+-"p.p1" sẽ xuất hiện:
+<p class="p1"></p>
+
+- Cú pháp Emmet: "ul>li*5>a" sẽ xuất hiện: ul (là thẻ cha)> li (thẻ con nhân cho 5)> trong mỗi thẻ con có 5 tag <a>
+ <ul>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+
+- Dùng # để người dùng dẫn về vị trí trên cùng của Trang chủ, nếu không sẽ bị dẫn đến trang trắng là điều không nên.
+- Tính năng đa con trỏ: Option + click chuột (thêm nhiều ký tự giống nhau cùng một lúc ví dụ như # phía trên)
+
+- Những kích thước của bản thiết kế : Designer sẽ cung cấp.
+(Nên chủ động hỏi về chi tiết của trang web, vì nó rất quan trọng để làm đúng ý của khách hàng)

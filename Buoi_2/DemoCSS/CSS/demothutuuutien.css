@@ -1,0 +1,29 @@
+/* tag: 1 */
+h1{
+    background-color: red;
+}
+
+/* id:100 
+#title1{
+    background-color: green;
+}*/
+
+/*Class: 10 */
+.heading1{
+    background-color: yellow;
+}
+
+/* điểm ưu tiên 10 + 100 = 110 => điểm ưu tiên cao hơn */
+.section1 #title1{
+    background-color: blue;
+}
+
+/* code id nằm ở dưới sẽ được ưu tiên hơn code id nằm ở trên */
+#title1{
+    background-color:aqua;
+}
+
+/* điểm ưu tiên 10 + 100 = 110 => điểm ưu tiên cao hơn */
+.section1 #title1{
+    background-color: blue;
+}

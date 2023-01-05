@@ -1,0 +1,103 @@
+/* GLOBAL */
+*{
+    box-sizing: border-box; 
+    /* thuộc tính này giúp cho 4 sản phẩm không bị rớt hàng, tự phân chia bố cục*/
+}
+
+html,body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.clear{
+    clear: both; /*dùng để xóa hiệu ứng của float, cả trái phải nên là dùng both*/
+} 
+
+/* HEADER */
+/* quan hệ cha con với thẻ div, nên cách ra dấu cách*/
+.header img{
+    width: 250px;
+}
+
+.header ul{
+    list-style: none;
+    background-color: black;
+    /* PADDING: là khoảng cách giữa nội dung và viền của thẻ đó (kiểm tra trong inspect) */
+    padding: 15px 0 ; /*giữ nguyên khoảng cách giữa chữ và thẻ dù có thay đổi font-size), hiện tại đang set cho top & bottom = 15px, right & left = 0 */
+    margin: 5px 0 10px ; /* top = 5px; right & left = 0; bottom = 5px */
+}
+
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Đầu tiên chúng ta nên kiểm tra tính chất của thẻ trước, xác định loại thẻ đó là block hay inline */
+/* Nếu vào inspect trong trình duyệt nhấn vào code của thẻ, nếu thẻ đó chiếm một hàng ngang thì đó là thẻ block, nếu thẻ đó chỉ chiếm vị trí vừa đủ thì thẻ đó là thẻ inline */
+.header ul li{
+    display: inline; /* display = hiển thị */
+/* MARGIN: là khoảng cách từ thẻ này đến thẻ kia */
+
+/* top, bottom, right, left (khoảng cách 4 mặt của chữ) */
+    margin: 20px; /*margin: lề*/
+/* top, bottom = 10px; right, left = 20px */
+    margin: 10px 20px;
+/* Chỉ set cho bên trái */
+    margin-left: 20px ;  
+/* top = 10px; right & left = 15px; bottom = 20px;*/
+    margin: 10px 15px 20px;
+/* top = 5px; right = 10; bottom = 15px; left = 20px (tính theo chiều kim đồng hồ) */
+    margin: 5px 10px 15px 20px;
+}
+
+/* CAROUSEL */
+.carousel{
+    height:  550px ;
+    background-image: url(../image/slider_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* PRODUCTS */
+.products{
+    margin-bottom: 70px;
+}
+
+.products__item{
+    float: left; /*dàn trái-những hình ảnh và nội dung sẽ tự động dàn sang trái */
+    width: 25%;
+    padding: 0 10px; 
+    /* box-sizing chỉ áp dụng được cho padding mà thôi */
+}
+
+.products__item img{
+    width: 100%;
+}
+
+.products h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+.products__item h3{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.products__item p{
+    font-size: 17px;
+}
+
+.products__item button{
+    background-color: red;
+    border: 1px solid red;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-top: 15px;
+}
+
+/* .products {
+    margin-bottom:70px ;
+} */

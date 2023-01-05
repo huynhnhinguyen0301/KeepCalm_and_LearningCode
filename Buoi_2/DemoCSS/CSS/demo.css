@@ -1,0 +1,62 @@
+/* h1 : selector
+text-align : property
+center :value*/
+
+/*tag name */
+h1{
+    text-align: center;
+}
+
+/* class name */
+/* trong trường hợp heading 2 và thẻ p có cùng background màu xanh lá */
+/* chúng ta có thể gộp lại chung như thế này để tiết kiệm dòng thêm "," */
+.heading2,p{
+    background-color: green;
+}
+
+/* id */
+/*không được đạt trùng tên id, không khoảng trắng, có dấu # ở đầu */
+#title2{
+    color: white;
+}
+/* 
+ p{
+    background-color: green;
+} 
+*/
+
+/* chỉ có thẻ p con trong section1 này mới có font size = 30px */
+.section1 p{
+font-size: 30px;
+}
+
+.section1 > p{ /*áp dụng cho thẻ con gần nhất trực tiếp của section1*/
+    /*nội dung html*/
+}
+
+.section1 span{
+    font-size: 50px;
+}
+
+
+
+/* dấu * để áp dụng cho tất cả các thẻ html */
+*{
+    font-weight: bolder;   /* độ đậm của chữ */
+}
+
+ /* dấu + chỉ lấy thêm 1 thẻ gần nhất vs div */
+ /*
+div + h3 { 
+    background-color: red;
+}*/
+
+/* muốn tô đỏ tất cả các thẻ h3 phía dưới div thì dùng dấu ~ */
+
+div ~ h3 {
+    background-color: aqua;
+}
+/* Nếu gọi tên class là section1 thì vô tình có những thẻ có tên class="section 1" sẽ bị ảnh hưởng. nếu muốn thẻ có class="section1" có style khác đi thì dùng abc[]*/
+p[class="section1"]{
+    background-color: blueviolet;
+}
